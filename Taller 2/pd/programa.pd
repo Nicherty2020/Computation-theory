@@ -1,0 +1,67 @@
+#N canvas -7 7 1137 976 12;
+#X obj 490 410 bng 21 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 460 520 leer_archivo;
+#X text 420 150 print: list Patito_de_hule 120000;
+#X text 420 180 print: list Telefono_Garfield 125000;
+#X text 420 209 print: list Disco_duro 240000;
+#X text 420 40 Problema 3 (20%) Construya un programa que imprima en
+la consola el listado con los subtotales de cada item. Para el archivo
+datos.txt \, debería entregar lo siguiente:, f 40;
+#X text 790 40 Problema 4 (30%) Construya un programa que imprima en
+la consola la suma de todos los subtotales. Para el archivo datos.txt
+\, debería entregar lo siguiente:, f 42;
+#X text 780 140 print: 485000;
+#X text 420 260 El archivo datos.txt tiene 4 columnas:;
+#X text 420 290 Nombre del producto \, precio unitario \, cantidad
+y país de origen, f 38;
+#X text 420 340 subtotal = precio unitario * cantidad;
+#X obj 510 590 zl group;
+#X msg 610 520 4;
+#X obj 420 660 unpack s f f s;
+#X obj 480 700 *;
+#X obj 420 750 pack s f;
+#X obj 470 800 print;
+#X obj 900 180 bng 18 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 860 310 leer_archivo;
+#X obj 910 380 zl group;
+#X msg 1010 310 4;
+#X obj 820 450 unpack s f f s;
+#X obj 860 490 *;
+#X obj 850 840 print;
+#X obj 460 470 t b b;
+#X obj 880 230 t b b;
+#X obj 860 560 zl group;
+#X msg 990 460 3;
+#X obj 840 640 unpack f f f;
+#X obj 850 750 +;
+#X obj 880 690 +;
+#X connect 0 0 24 0;
+#X connect 1 0 11 0;
+#X connect 11 0 13 0;
+#X connect 12 0 11 1;
+#X connect 13 0 15 0;
+#X connect 13 1 14 0;
+#X connect 13 2 14 1;
+#X connect 14 0 15 1;
+#X connect 15 0 16 0;
+#X connect 17 0 25 0;
+#X connect 18 0 19 0;
+#X connect 19 0 21 0;
+#X connect 20 0 19 1;
+#X connect 20 0 27 0;
+#X connect 21 1 22 0;
+#X connect 21 2 22 1;
+#X connect 22 0 26 0;
+#X connect 24 0 1 0;
+#X connect 24 1 12 0;
+#X connect 25 0 18 0;
+#X connect 25 1 20 0;
+#X connect 26 0 28 0;
+#X connect 27 0 26 1;
+#X connect 28 0 29 0;
+#X connect 28 1 30 0;
+#X connect 28 2 30 1;
+#X connect 29 0 23 0;
+#X connect 30 0 29 1;

@@ -1,0 +1,18 @@
+#N canvas 2162 334 956 1027 12;
+#X msg 252 312 0;
+#X obj 252 82 inlet;
+#X obj 252 395 outlet;
+#X obj 292 252 text define \$0-datos;
+#X obj 292 342 text get \$0-datos;
+#X msg 330 180 read datos.txt;
+#X msg 500 170 clear;
+#X obj 252 142 t b b b;
+#X connect 0 0 4 0;
+#X connect 1 0 7 0;
+#X connect 3 0 0 0;
+#X connect 4 0 2 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
+#X connect 7 0 3 0;
+#X connect 7 1 5 0;
+#X connect 7 2 6 0;
