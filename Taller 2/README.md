@@ -1,1 +1,1 @@
-video explicativo del taller: https://youtu.be/RwGWM7sum8I
+video explicando la solución del taller: https://youtu.be/RwGWM7sum8I
